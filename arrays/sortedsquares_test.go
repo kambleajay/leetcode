@@ -4,18 +4,6 @@ import (
 	"testing"
 )
 
-func equal(xs, ys []int) bool {
-	if len(xs) != len(ys) {
-		return false
-	}
-	for i := range xs {
-		if xs[i] != ys[i] {
-			return false
-		}
-	}
-	return true
- }
-
 func TestSortedSquares(t *testing.T) {
 	tests := []struct {
 		nums []int

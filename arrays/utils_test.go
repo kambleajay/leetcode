@@ -35,3 +35,15 @@ func randomIntsBetween(size int, min int, max int) []int {
 	}
 	return nums
 }
+
+func equal(xs, ys []int) bool {
+	if len(xs) != len(ys) {
+		return false
+	}
+	for i := range xs {
+		if xs[i] != ys[i] {
+			return false
+		}
+	}
+	return true
+}
