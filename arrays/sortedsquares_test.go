@@ -36,8 +36,9 @@ func TestSortedSquares(t *testing.T) {
 }
 
 func benchmarkSortedSquares(b *testing.B, size int) {
+	nums := randomIntsBetween(size, -10000, 10000)
 	for i := 0; i < b.N; i++ {
-		sortedSquares(randomIntsBetween(size, -10000, 10000))
+		sortedSquares(nums)
 	}
 }
 
